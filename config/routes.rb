@@ -21,7 +21,7 @@ Rails.application.routes.draw do
     end
   end
 
-  resources :chefs, excep: [:new]
+  resources :chefs, excep: [:new, :destroy]
 
   get '/register', to: 'chefs#new'
 
